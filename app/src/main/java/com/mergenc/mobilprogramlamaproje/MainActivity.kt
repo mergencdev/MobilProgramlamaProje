@@ -3,8 +3,6 @@ package com.mergenc.mobilprogramlamaproje
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-
-//Taha baba 01
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
