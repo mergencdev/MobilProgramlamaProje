@@ -17,5 +17,9 @@ class MainActivity : AppCompatActivity() {
         binding.btnServiceExample.setOnClickListener {
             startActivity(Intent(this, ServiceExampleActivity::class.java))
         }
+
+        binding.btnBroadcastReceiverExample.setOnClickListener {
+            startActivity(Intent(this, BroadcastReceiverExample::class.java))
+        }
     }
 }

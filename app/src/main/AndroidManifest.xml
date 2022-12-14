@@ -13,6 +13,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MobilProgramlamaProje"
         tools:targetApi="31">
+
+        <receiver android:name=".ToastReceiver" android:exported="false"
+            tools:ignore="Instantiatable">
+            <intent-filter>
+                <action android:name="com.mergenc.ACTION_TOAST_RECEIVER"/>
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".BroadcastReceiverExample"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -28,9 +39,11 @@
         </activity>
         <activity
             android:name=".ServiceExampleActivity"
-            android:exported="false">
-        </activity>
-        <service android:name=".MediaPlayerService"/>
+            android:exported="false" />
+
+        <service android:name=".MediaPlayerService" />
+
+
     </application>
 
 </manifest>
